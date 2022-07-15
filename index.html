@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ableton Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+
+    <a href="#"><svg class="menu-logo"
+        role="img"
+        aria-labelledby="logo"
+        xmlns="http://www.w3.org/2000/svg"
+        width="65"
+        height="30"
+        viewBox="0 0 45 21"
+      >
+        <path
+          d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"
+        ></path>
+      </svg></a>
+
+      <p class="menu-button">Menu <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" 
+        width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+        <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg></p>
     
-</body>
+
+        <ul class="nav-desktop">
+            <li><a href="#">Live</a></li>
+            <li><a href="#">Push</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Packs</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a class="more-open" href="#">More+</a></li>
+            
+            <ul class="nav-right">
+            <li><a href="#">Try Live for Free</a></li>
+            <li><a href="#">Log In or Register</a></li>
+          </ul> 
+        </ul>
+
+    <nav class="navbar">
+        
+        <p class="menu-button-back">Menu <svg class="up-arrow" xmlns="http://www.w3.org/2000/svg" 
+            width="24" height="24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;">
+            <path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg></p>
+        
+
+    <nav class="navbar-container">
+        
+        <ul class="nav-left">
+        <li><a href="#">Live</a></li>
+        <li><a href="#">Push</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Packs</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a class="more-close" href="#">More-</a></li>
+        
+        <ul class="nav-right">
+        <li><a href="#">Try Live for Free</a></li>
+        <li><a href="#">Log In or Register</a></li>
+      </ul> 
+    </ul>
+      
+      <ul class="nav-more">
+        <li>
+            <p class="menu-heading">More on Ableton.com:</p>
+            <ul class="hidden-menu">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Ableton for the Classroom</a></li>
+            <li><a href="#">Ableton for Colleges and Universities</a></li>
+            <li><a href="#">Certified Training</a></li>
+            <li><a href="#">About Ableton</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Apprenticeships</a></li>
+          </ul>
+          <p class="menu-heading">More from Ableton:</p>
+          <nav class="menu-grid-container">
+          <ul class="menu-grid">
+            
+            <li>
+              <a href="#" class="menu-subheading">Loop</a>
+              <p class="menu-desc">Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+            </li>
+            <li>
+              <a href="#" class="menu-subheading">Learning Music</a>
+              <p class="menu-desc">Learn the fundamentals of music making right in your browser.</p>
+            </li>
+            <li>
+              <a href="#" class="menu-subheading">Learning Synths</a>
+              <p class="menu-desc">Get started with synthesis using a web-based synth and accompanying lessons.</p>
+            </li>
+            <li>
+              <a href="#" class="menu-subheading">Making Music</a>
+              <p class="menu-desc">Some tips from 74 Creative Strategies for Electronic Producers.</p>
+            </li>
+          </ul>
+        </nav>
+        </li>
+        </ul>
+    </nav>
+
+    <nav class="stickynav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Apprentiships</a></li>
+      </ul>
+    </nav>
+    </nav>
+</nav>
+
+<script>
+    const menu = document.querySelector('.menu-button')
+    const close = document.querySelector('.menu-button-back')
+    const nav = document.querySelector('.navbar')
+
+    menu.addEventListener('click', () => {
+        nav.classList.add('open-nav')
+    })
+
+    close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+    })
+</script>
+
+<script>
+    const menu2 = document.querySelector('.more-open')
+    const close2 = document.querySelector('.more-close')
+    const nav2 = document.querySelector('.navbar')
+
+    menu2.addEventListener('click', () => {
+        nav.classList.add('open-nav2')
+    })
+
+    close2.addEventListener('click', () => {
+            nav.classList.remove('open-nav2')
+    })
+</script>
+
+<div class="hero-image">
+    <h1 class="hero-header">Ableton</h1>
+    <img src="/images/header.jpg" alt="Header Image">
+</div>
+
+<section class="text">
+    <h2 class="text-header">We make <a href="#">Live</a>, <a href="#">Push</a> and <a href="#">Link</a> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.</h2>
+    <p class="text-desc">Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community of dedicated musicians, sound designers, and artists from across the world.</p>
+</section>
+
+<section class="photos">
+    
+    <div class="yellow"></div>
+    <div class="ydiv1"></div>
+    <div class="ydiv2"></div>
+
+</section>
+
+<section class="text">
+    <h2 class="text-header"></h2>
+    <p class="text-desc"></p>
+</section>
+
+<video src=""></video>
+
+<section class="text">
+    <h2 class="text-header"></h2>
+    <p class="text-desc"></p>
+</section>
+
+<section class="photos">
+
+</section>
+
+<section class="text">
+    <h2 class="text-header"></h2>
+    <p class="text-desc"></p>
+</section>
+
+<div class="hero-img">
+
+</div>
+
+<section class="text">
+    <h2 class="text-header"></h2>
+    <p class="text-desc"></p>
+</section>
+
+<section class="photos">
+
+</section>
+
+<section class="text">
+    <h2 class="text-header"></h2>
+    <p class="text-desc"></p>
+</section>
+
+<section class="img-text-cols">
+    <img src="" alt="">
+    <p></p>
+    <p></p>
+</section>
+
+  </body>
 </html>
