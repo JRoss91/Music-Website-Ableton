@@ -320,6 +320,77 @@ li {
     font-weight: bold;
 }
 
+footer {
+    margin-left: 8.33333vw;
+    margin-right: 8.33333vw;
+    border-top: 2px solid #f3f3f3;
+    padding-top: 50px;
+}
+
+footer div {
+    margin-top: 50px;
+}
+
+footer h3, footer p, footer a, footer li {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+footer h3, footer p {
+    padding-bottom: 10px;
+}
+
+.footer-footer a {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 50px;
+}
+
+.email-input {
+    width: 63vw;
+    height: 2.7em;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.email-button {
+    width: 20vw;
+    height: 2.7em;
+    background-color: #0000ff;
+    border: none; 
+    font-weight: bold; 
+    color: white; 
+}
+
+.facebook path {
+    fill: blue;
+}
+
+.twitter path {
+    fill: rgb(72, 162, 247);
+}
+
+.youtube path {
+    fill: rgb(226, 49, 49);
+}
+
+.instagram path {
+    fill: rgb(189, 95, 8);
+}
+
+.social-icons a {
+    margin-right: 1em;
+}
+
+footer select {
+    width: 35vw;
+    height: 2.7em;
+    border: none;
+    background-color: #f3f3f3;
+    padding-left: 10px;
+}
 
 
 @media screen and (min-width: 1000px) {
@@ -411,11 +482,70 @@ li {
     .blue {
         padding-left: 10vw;
         padding-right: 10vw;
+        width: 50vw;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-
+    }
+    .last-img {
+        width: 50vw;
+    }   
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 20vw 20vw 40vw;
+        gap: 2em;
+        grid-template-areas: 
+        'one two three'
+        'four five six';
+    }
+    .footer1 {
+        grid-area: one;
+    }
+    .footer2 {
+        grid-area: two;
+    }
+    .footer3 {
+        grid-area: three;
+    }
+    .footer4 {
+        grid-area: four;
+    }
+    .footer5 {
+        grid-area: five;
+    }
+    .footer6 {
+        grid-area: six;
+    }
+    .email-input {
+        width: 30vw;
+        height: 2.7em;
+        border: none;
+        background-color: #f3f3f3;
+        margin-top: 20px;
+    }
+    
+    .email-button {
+        width: 10vw;
+        height: 2.7em;
+        background-color: #0000ff;
+        border: none; 
+        font-weight: bold; 
+        color: white; 
+        margin-top: 20px;
+    }
+    footer select {
+        width: 16vw;
+        height: 2.7em;
+        border: none;
+        background-color: #f3f3f3;
+        padding-left: 10px;
+    }
+    .footer-footer ul {
+        display: flex;
+    }
+    .footer-footer a {
+        margin-right: 1em;
     }
 }
 
